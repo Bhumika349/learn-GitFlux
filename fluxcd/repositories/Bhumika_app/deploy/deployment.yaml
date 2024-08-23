@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bhumikaflux-app-1
+  name: Bhumika_app
   labels:
-    app: bhumikaflux-app-1
+    app: Bhumika_app
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: bhumikaflux-app-1
+      app: Bhumika_app
   replicas: 2
   strategy:
     type: RollingUpdate
@@ -18,11 +18,11 @@ spec:
   template:
     metadata:
       labels:
-        app: bhumikaflux-app-1
+        app: Bhumika_app
     spec:
       containers:
-      - name: bhumikaflux-app-1
-        image: bhumikaflux-app-1:0.0.1
+      - name: Bhumika_app
+        image: Bhumika_app:0.0.1
         ports:
         - containerPort: 5000
         volumeMounts:
@@ -31,4 +31,4 @@ spec:
       volumes:
       - name: config-volume
         configMap:
-          name: bhumikaflux-app-1
+          name: Bhumika_app

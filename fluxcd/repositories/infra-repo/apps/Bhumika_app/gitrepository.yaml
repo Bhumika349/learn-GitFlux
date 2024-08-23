@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: Bhumika_app
+  namespace: default
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  url: https://github.com/Bhumika349/learn-GitFlux
