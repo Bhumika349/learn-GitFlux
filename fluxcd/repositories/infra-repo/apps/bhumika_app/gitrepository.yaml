@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: Bhumika_app
+  name: bhumika_app
   namespace: default
 spec:
   interval: 1m0s

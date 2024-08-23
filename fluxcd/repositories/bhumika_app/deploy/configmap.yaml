@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: Bhumika_app
+  name: bhumika_app
   namespace: default
 data:
   config.json: |

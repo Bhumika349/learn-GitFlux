@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   namespace: default
-  name: Bhumika_app
+  name: bhumika_app
   labels:
-    app: Bhumika_app
+    app: bhumika_app
 spec:
   type: ClusterIP
   selector:
-    app: Bhumika_app
+    app: bhumika_app
   ports:
     - protocol: TCP
       name: http
