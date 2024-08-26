@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: bhumika-app
-        image: bhumika-app:0.0.1
+        image: bhumika-app:0.0.2
         ports:
         - containerPort: 5000
         volumeMounts:
